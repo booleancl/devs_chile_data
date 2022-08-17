@@ -1,22 +1,30 @@
 # Devs Chile Encuestas Visualización
 
-SESION 0: Elección de herramientas
+## SESION 0: Debate y elección de herramientas
 
-- [x] No queremos estar volviendo a
-SESION 1: SPRINT 0 - parte 1
-  
-  ### Mejoras al flujo de trabajo
+[![Watch the video](https://img.youtube.com/vi/tP8FrJshpcQ/maxresdefault.jpg)](https://youtu.be/tP8FrJshpcQ)
+
+ - [x] Selección Framework y generación de Boilerplate
+ - [x] Consumir Endpoint de encuesta de Devs Chile
+
+
+## SESION 1: Mejoras al flujo de trabajo 
+
+[![Watch the video](https://img.youtube.com/vi/DCDRZJkH0Kg/maxresdefault.jpg)](https://youtu.be/DCDRZJkH0Kg)
+
+  ### SPRINT 0 - parte 1
 
   - [x] No queremos estar volviendo a correr el comando npm start por cada cambio que hacemos
   - [x] Queremos usar la variable `process.env.PORT`
   - [x] Utilizaremos Jest para crear pruebas para la estructura esperada que queremos consumir desde el Frontend. 
   
 
-SESION 2: SPRINT 0 - parte 2
-  ### TDD para nueva estructura
-  ---
+## SESION 2: TDD para nueva estructura
+  
+  ### SPRINT 0 - parte 2
+
   - [ ] Resolver como evitar pegarle al servidor real y poder intervenir la llamada real
-  - [x] Resolveremos la prueba e iremos refactorizando el código para lograr la siguiente estructura:
+  - [ ] Resolveremos la prueba e iremos refactorizando el código para lograr la siguiente estructura:
 
   **Antes**
 
@@ -66,10 +74,8 @@ SESION 2: SPRINT 0 - parte 2
 
   ```
 
+   ### Vamos a producción!
 
-  1. Vamos a producción!
-  ---
-  - ESLint utilizando StandardJS
-  - Husky para correr ESLint y las pruebas. Pre-commit y Pre-push
-  - GitHub Actions para correr las pruebas y salir a producción con Heroku 
-
+  - [ ] ESLint utilizando StandardJS
+  - [ ] Husky para correr ESLint y las pruebas. Pre-commit y Pre-push
+  - [ ] GitHub Actions para correr las pruebas y salir a producción con Heroku 
