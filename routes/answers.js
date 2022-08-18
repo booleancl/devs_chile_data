@@ -1,29 +1,45 @@
 var express = require('express');
+const axios = require('axios')
 var router = express.Router();
-var http = require("https");
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
-  var req = http.get("https://sueldos-tech-chile-2022.herokuapp.com/v2/answers", function (response) {
-    var chunks = [];
-    
-    response.on("data", function (chunk) {
-      chunks.push(chunk);
-    });
-    
-    response.on("error", function(err){
-      res.send(error.message)
-    })
+router.get('/', async function(req, res, next) {
+  try {
+    const response = await axios.get("https://sueldos-tech-chile-2022.herokuapp.com/v2/answers")
+    const answers = response.data
+    const metadataKeys = [
+      "Submission ID",
+      "Respondent ID",
+      "Submitted at"
+    ]
 
-    response.on("end", function () {
-      var body = Buffer.concat(chunks);
-      res.send(body.toString());
-    });
+    const newResponse = answers
+      .map((answer) => {
+        let newAnswer = {
+          answers: []
+        }
 
-  });
-  
-  req.end();
-  
+        for(key in answer) {
+          if (metadataKeys.includes(key)) {
+            newAnswer = {
+              [key]: answer[key],
+              ...newAnswer,
+            }
+          } else {
+            newAnswer.answers.push({
+              question: key,
+              answer: answer[key]
+            })
+          }
+        }
+
+        return newAnswer
+      })
+
+    res.send(newResponse);
+  } catch (error) {
+    res.send(error.message)
+  }
 });
 
 module.exports = router;
