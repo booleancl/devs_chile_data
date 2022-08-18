@@ -20,11 +20,13 @@
   
 
 ## SESION 2: TDD para nueva estructura
+[![Watch the video](https://img.youtube.com/vi/akNoxEpschU/maxresdefault.jpg)](https://youtu.be/akNoxEpschU)
+
   
   ### SPRINT 0 - parte 2
 
-  - [ ] Resolver como evitar pegarle al servidor real y poder intervenir la llamada real
-  - [ ] Resolveremos la prueba e iremos refactorizando el código para lograr la siguiente estructura:
+  - [x] Resolver como evitar pegarle al servidor real y poder intervenir la llamada real
+  - [x] Resolveremos la prueba e iremos refactorizando el código para lograr la siguiente estructura:
 
   **Antes**
 
