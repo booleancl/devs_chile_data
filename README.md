@@ -1,30 +1,25 @@
 # Devs Chile Encuestas Visualización
 
-## SESION 0: Debate y elección de herramientas
+## SPRINT 0 - parte 1: Debate y elección de herramientas
 
 [![Watch the video](https://img.youtube.com/vi/tP8FrJshpcQ/maxresdefault.jpg)](https://youtu.be/tP8FrJshpcQ)
 
  - [x] Selección Framework y generación de Boilerplate
- - [x] Consumir Endpoint de encuesta de Devs Chile
+ - [x] Consumir Endpoint de encuesta de Devs Chile con Postman para entender como funciona
+ - [x] Seleccionar version LTS de NodeJS
+ - [x] Elegir consumir endpoint con librerías o métodos nativos
 
-
-## SESION 1: Mejoras al flujo de trabajo 
+## SPRINT 0 - parte 2: Mejoras al flujo de trabajo 
 
 [![Watch the video](https://img.youtube.com/vi/DCDRZJkH0Kg/maxresdefault.jpg)](https://youtu.be/DCDRZJkH0Kg)
-
-  ### SPRINT 0 - parte 1
 
   - [x] No queremos estar volviendo a correr el comando npm start por cada cambio que hacemos
   - [x] Queremos usar la variable `process.env.PORT`
   - [x] Utilizaremos Jest para crear pruebas para la estructura esperada que queremos consumir desde el Frontend. 
-  
 
-## SESION 2: TDD para nueva estructura
+## SPRINT 0 - parte 3: TDD para nueva estructura
 [![Watch the video](https://img.youtube.com/vi/akNoxEpschU/maxresdefault.jpg)](https://youtu.be/akNoxEpschU)
-
   
-  ### SPRINT 0 - parte 2
-
   - [x] Resolver como evitar pegarle al servidor real y poder intervenir la llamada real
   - [x] Resolveremos la prueba e iremos refactorizando el código para lograr la siguiente estructura:
 
@@ -76,8 +71,9 @@
 
   ```
 
-   ### Vamos a producción!
+## SPRINT 0 - parte 4: Vamos a producción!
 
-  - [ ] ESLint utilizando StandardJS
-  - [ ] Husky para correr ESLint y las pruebas. Pre-commit y Pre-push
-  - [ ] GitHub Actions para correr las pruebas y salir a producción con Heroku 
+[![Watch the video](https://img.youtube.com/vi/db3FUifgMiQ/maxresdefault.jpg)](https://youtu.be/db3FUifgMiQ)
+ 
+  - [x] ESLint utilizando StandardJS
+  - [x] GitHub Actions para correr las pruebas y salir a producción con Heroku 
