@@ -77,3 +77,15 @@
  
   - [x] ESLint utilizando StandardJS
   - [x] GitHub Actions para correr las pruebas y salir a producción con Heroku 
+
+
+
+## POST-PRODUCCIÓN
+
+  [ VIDEO PENDIENTE ]
+
+Tuvimos que migrarnos de Heroku a Render.com debido a las nuevas políticas.
+Finalmente la implementación del flujo de trabajo con ESLint y Jest quedó así:
+
+https://github.com/booleancl/devs_chile_data/commit/47839884369a17d001e488f93f5f7390f2ae2ea4
+
