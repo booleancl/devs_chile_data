@@ -5,7 +5,7 @@ const router = express.Router()
 /* GET users listing. */
 router.get('/', async function (req, res, next) {
   try {
-    const response = await axios.get('https://sueldos-tech-chile-2022.herokuapp.com/v2/answers')
+    const response = await axios.get('https://sueldos-tech-chile-2022.onrender.com/v2/answers')
     const answers = response.data
     const metadataKeys = [
       'Submission ID',

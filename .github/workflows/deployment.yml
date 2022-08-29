@@ -27,10 +27,10 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm install
-    - name: Deploy to Heroku
-      uses: AkhileshNS/heroku-deploy@v3.12.12
+    - name: Render GitHub Action
+      uses: Bounceapp/render-action@0.3.0
       with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "devs-chile-data"
-          heroku_email: "contacto@boolean.cl"
-
+          email: ${{ secrets.RENDER_EMAIL }}
+          password: ${{ secrets.RENDER_PASSWORD }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          service-id: srv-cc6h17ha6gdon70sea60
