@@ -6,7 +6,7 @@ jest.mock('axios', () => {
   const fixedResponse = require('./fixtures/answers.json')
 
   return {
-    get(url) {
+    get (url) {
       return Promise.resolve({
         data: fixedResponse
       })
@@ -14,15 +14,12 @@ jest.mock('axios', () => {
   }
 })
 
-describe("/answers Endpoint", () => {
-
-  it("GET /answers", async () => {
-
+describe('/answers Endpoint', () => {
+  it('GET /answers', async () => {
     const response = await supertest(app)
       .get('/answers')
-    
+
     expect(response.status).toBe(200)
     expect(response.body).toEqual(expectedResponse)
   })
-
 })
